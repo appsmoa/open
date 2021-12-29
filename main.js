@@ -1,3 +1,21 @@
+const express = require('express')
+const res = require('express/lib/response')
+const app = express()
+
+app.get('/',function(req,res){
+  return res.send('/') ;
+})
+
+
+app.get('/page',function(req,res){
+  return res.send('/page') ;
+})
+
+app.listen(3000,function(){
+  console.log('example app listening on port 3000!');
+})
+
+/*
 var http = require('http');
 var fs = require('fs');
 var url = require('url');
@@ -146,3 +164,4 @@ var port = 3000;
 app.listen(port, function(){
   console.log('server on! http://localhost:'+port);
 });
+*/
