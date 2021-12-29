@@ -6,7 +6,6 @@ app.get('/',function(req,res){
   return res.send('/') ;
 })
 
-
 app.get('/page',function(req,res){
   return res.send('/page') ;
 })
